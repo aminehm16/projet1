@@ -1,4 +1,5 @@
-# #include <stdio.h>
+#projet
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
