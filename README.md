@@ -6,6 +6,6 @@
 int main() {
 srand(time(NULL));
   int nombreMystere = rand() % 100 + 1;
-   int n;
+   int supposition;
     int i= 0;
-    
+  printf("bienvenue dans le jeu de devinette!\n");
