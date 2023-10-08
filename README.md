@@ -1,28 +1,16 @@
-#projet
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 int main() {
-srand(time(NULL));
-  int nombreMystere = rand() % 10 + 1;
-  int supposition;
-  int i= 0;
-  printf("bienvenue dans le jeu !\n");
-  printf("Devinez le nombre entre 1 et 10.\n");
-    
-    do {
-        printf("Entrez votre réponse : ");
-        scanf("%d", & supposition);
-        i++;
-if (supposition < nombreAleatoire) {
-    printf("Le nombre à deviner est plus grand.\n");
-   }else if (supposition> nombreAleatoire) {
-          printf("Le nombre à deviner est plus petit.\n");
- } else {
-         printf("Bravo ! Vous avez deviné le nombre en %d essais.\n", i);
-        }
-    } 
-    
+    int tableau[]={1,8,4,3,2};
+    int i ;
+    int somme=0;
+    i=0;
+    while (i<5){
+    somme= somme + tableau [i];
+    i=i+1 ;
+    }
+
+    printf("La somme des éléments du tableau est : %d\n", somme);
+
     return 0;
 }
