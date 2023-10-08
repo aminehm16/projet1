@@ -15,3 +15,14 @@ srand(time(NULL));
         printf("Entrez votre réponse : ");
         scanf("%d", & supposition);
         i++;
+if (supposition < nombreAleatoire) {
+    printf("Le nombre à deviner est plus grand.\n");
+   }else if (supposition> nombreAleatoire) {
+          printf("Le nombre à deviner est plus petit.\n");
+ } else {
+         printf("Bravo ! Vous avez deviné le nombre en %d essais.\n", i);
+        }
+    } 
+    
+    return 0;
+}
