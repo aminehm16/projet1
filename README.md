@@ -5,7 +5,7 @@
 
 int main() {
 srand(time(NULL));
-  int nombreMystere = rand() % 100 + 1;
+  int nombreMystere = rand() % 10 + 1;
   int supposition;
   int i= 0;
   printf("bienvenue dans le jeu !\n");
