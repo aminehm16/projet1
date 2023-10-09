@@ -1,16 +1,19 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <math.h>
 int main() {
-    int tableau[]={1,8,4,3,2};
-    int i ;
-    int somme=0;
-    i=0;
-    while (i<5){
-    somme= somme + tableau [i];
-    i=i+1 ;
+    int t[5];
+    int i ,s ;
+    printf("donner des valeurs pour le tableau\n ");
+    for ( i=0 ; i<5 ; i++ ){
+    s=s+t [i] ;
+    scanf("%d ,&t[i]");
     }
-
-    printf("La somme des éléments du tableau est : %d\n", somme);
-
-    return 0;
-}
+    s=0 ;
+    for ( i=0 ; i<5 ; i++ ){
+    s=s+t [i] ;
+    printf("la somme des éléments de tableau est %d",s);
+    }
+    
+    return 0 ;
+    }
